@@ -136,6 +136,11 @@ section:last-of-type{border-bottom:none}
   text-wrap:balance;
   margin:8px 0 18px;
 }
+#hero .nombres-completos{
+  letter-spacing:0.18em;
+  font-size:0.75rem;
+  line-height:1.9;
+}
 #hero .quote{
   font-style:italic;
   font-size:1.15rem;
@@ -207,6 +212,13 @@ section:last-of-type{border-bottom:none}
   margin-top:4px;
   font-size:0.98rem;
 }
+.lugar-card .nota{
+  color:var(--ink-soft);
+  font-style:italic;
+  max-width:32ch;
+  margin:12px auto 0;
+  line-height:1.5;
+}
 .btn{
   display:inline-block;
   margin-top:16px;
@@ -271,14 +283,6 @@ section:last-of-type{border-bottom:none}
   line-height:1.65;
 }
 
-/* Aviso adultos */
-#aviso{text-align:center}
-#aviso p{
-  max-width:36ch;
-  margin:0 auto;
-  color:var(--ink-soft);
-  line-height:1.6;
-}
 
 /* RSVP */
 #rsvp{text-align:center}
@@ -288,6 +292,16 @@ section:last-of-type{border-bottom:none}
   color:var(--gold);
   margin-top:10px;
   font-style:italic;
+}
+
+#rsvp .regalo{
+  max-width:36ch;
+  margin-top:34px;
+  padding-top:30px;
+  border-top:1px solid var(--line);
+  font-style:italic;
+  font-size:1.1rem;
+  line-height:1.6;
 }
 
 footer{

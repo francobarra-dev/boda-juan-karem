@@ -20,7 +20,7 @@ setInterval(tick, 1000);
 
 // Enlaces a Google Maps
 document.getElementById("link-ceremonia").href =
-  "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Capilla XXX, XXX");
+  "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Parroquia Nuestra Señora de los Pobres, Premio Nobel 586, Huechuraba");
 document.getElementById("link-fiesta").href =
   "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Av. Recoleta 5377, Santiago");
 
