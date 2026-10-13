@@ -42,10 +42,20 @@ function abrirInvitacion(){
 }
 cover.addEventListener("click", abrirInvitacion);
 
+// Intenta sonar apenas carga la página; si el navegador lo bloquea,
+// arranca con el primer toque o clic en cualquier parte
+bgm.play().catch(function(){
+  function alPrimerToque(){
+    document.removeEventListener("pointerdown", alPrimerToque);
+    if (bgm.paused) bgm.play().catch(function(){});
+  }
+  document.addEventListener("pointerdown", alPrimerToque);
+});
+
 musicBtn.addEventListener("click", function(){
   if (bgm.paused){
     bgm.play().catch(function(){});
-    musicBtn.style.color = "var(--sage-deep)";
+    musicBtn.style.color = "var(--rose-deep)";
   } else {
     bgm.pause();
     musicBtn.style.color = "var(--ink-soft)";
