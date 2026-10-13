@@ -130,17 +130,14 @@ section:last-of-type{border-bottom:none}
 .photo-frame svg{width:44px;height:44px}
 .photo-frame span{font-size:0.85rem; color:var(--ink-soft); letter-spacing:0.03em}
 #hero .names{
-  font-size:3.4rem;
-  line-height:1.15;
+  font-size:clamp(1.9rem, 6.4vw, 2.4rem);
+  line-height:1.2;
   color:var(--olive);
   text-wrap:balance;
   margin:8px 0 18px;
 }
-#hero .nombres-completos{
-  letter-spacing:0.18em;
-  font-size:0.75rem;
-  line-height:1.9;
-}
+#hero .names span{display:block}
+#hero .names .amp{color:var(--sage-deep); margin-block:2px}
 #hero .quote{
   font-style:italic;
   font-size:1.15rem;
