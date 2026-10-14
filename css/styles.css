@@ -326,6 +326,13 @@ section{
   line-height:1.6;
 }
 
+#rsvp .cuenta{
+  font-size:1.25rem;
+  font-weight:600;
+  color:var(--olive);
+  margin-top:14px;
+}
+
 footer{
   text-align:center;
   padding:40px 20px;
